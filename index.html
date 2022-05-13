@@ -525,21 +525,23 @@
 
           <!-- CONTENEDOR DERECHO -->
           <div class="right-contact">
-            <form action="https://formsubmit.co/pablocorrea523@gmail.com" method="POST" class="contact-form">
+            <form id="form" class="contact-form form">
               <div class="input-control i-c-2">
-                <input type="text" required placeholder="Tu Nombre" />
-                <input type="email" name="email" required placeholder="Tu Email" />
+                <input id="name" type="text" name="name" required placeholder="Tu Nombre" />
+                <input id="email" type="email" name="email" required placeholder="Tu Email" />
               </div>
               <div class="input-control">
                 <input type="text" name="_subject" required placeholder="Ingresar Asunto" />
               </div>
               <div class="input-control">
-                <textarea type="text" name="message" cols="15" rows="8" placeholder="Mensaje aquí..."></textarea>
+                <textarea id="message" type="text" name="message" cols="15" rows="8"
+                  placeholder="Mensaje aquí..."></textarea>
               </div>
               <div class="submit-btn">
                 <button type="submit"> Enviar</button>
               </div>
             </form>
+            <a href="mailto:pablocorrea@gmail.com" id="mailto" class="mailto"></a>
           </div>
           <!-- FIN CONTENEDOR DERECHO -->
         </div>
@@ -571,6 +573,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"
     referrerpolicy="no-referrer"></script>
   <script src="App.js"></script>
+  <script src="./js/sendEmail.js"></script>
 </body>
 
 </html>
