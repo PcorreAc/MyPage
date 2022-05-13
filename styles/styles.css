@@ -155,7 +155,7 @@ section {
   font-size: 3rem;
 }
 
-.header-content .right-header .name span {
+.header-content .right-header .name .name-children {
   color: var(--color-secondary);
 }
 
@@ -168,7 +168,7 @@ section {
 /* Download component */
 .btn-con {
   display: flex;
-  align-items: center;
+  align-self: flex-start;
 }
 
 .main-btn {
@@ -213,6 +213,7 @@ section {
   height: 100%;
   background-color: var(--color-secondary);
   transform: translateX(0);
+  transition: all 0.4s ease-out;
 }
 
 /* About me header*/
@@ -616,7 +617,7 @@ section {
 /* CONTACTO */
 .contact-content-con {
   display: flex;
-  padding-top: 3.4rem;
+  padding-top: 3.5rem;
 }
 
 .contact-content-con .left-contact {
@@ -701,7 +702,7 @@ section {
 }
 
 .contact-content-con .right-contact .input-control input,
-textarea {
+.contact-content-con .right-contact .input-control textarea {
   border-radius: 30px;
   font-weight: inherit;
   font-size: inherit;
@@ -820,7 +821,6 @@ textarea {
   }
 
   .header-content {
-    grid-template-columns: repeat(1, 1fr);
     padding-bottom: 6rem;
   }
 
@@ -833,12 +833,7 @@ textarea {
     display: none;
   }
 
-  .about-container {
-    grid-template-columns: repeat(1, 1fr);
-  }
-
   .about-container .right-about {
-    grid-template-columns: 1fr;
     padding-top: 2.5rem;
   }
 
@@ -850,22 +845,19 @@ textarea {
     padding-left: 0;
   }
 
-  .timeline {
+  .sm\:gtc-repeat-1fr {
     grid-template-columns: repeat(1, 1fr);
+  }
+
+  .timeline {
     padding-bottom: 6rem;
   }
 
-  .about-stats .progress-bars {
-    grid-template-columns: repeat(1, 1fr);
-  }
-
   .portfolios {
-    grid-template-columns: repeat(1, 1fr);
     padding-bottom: 6rem;
   }
 
   .blogs {
-    grid-template-columns: repeat(1, 1fr);
     padding-bottom: 6rem;
   }
 
@@ -876,7 +868,6 @@ textarea {
   .contact-content-con .right-contact {
     margin-left: 0;
     margin-top: 2.5rem;
-    margin-bottom: 6rem;
   }
 
   .contact-content-con .right-contact .i-c-2 {
@@ -888,20 +879,47 @@ textarea {
     margin-top: 1.5rem;
   }
 
+  .contact-content-con .right-contact {
+    margin-bottom: 6rem;
+  }
+
+  .contact-item {
+    flex-direction: column;
+    margin: 1rem 0;
+  }
+
+  .contact-item p {
+    font-size: 15px;
+    color: var(--color-grey2);
+  }
+
+  .contact-item span {
+    font-size: 15px;
+  }
+
+  .contact-item .icon {
+    grid-template-columns: 25px 1fr;
+  }
+
+  .contact-icon {
+    justify-content: center;
+  }
+
   .section {
     padding: 2rem 2.5rem;
   }
 
   .main-title h2 {
-    font-size: 2rem;
+    font-size: 2rem !important;
   }
 
   .main-title h2 span {
-    font-size: 2.3rem;
+    font-size: 2rem !important;
   }
 
   .main-title h2 .bg-text {
-    font-size: 2.3rem;
+    font-size: 2.6rem !important;
+    right: -50%;
   }
 
   .controlls {

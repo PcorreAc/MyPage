@@ -3,6 +3,14 @@ const sectBtns = document.querySelectorAll(".controlls");
 const sectBnt = document.querySelectorAll(".control");
 const allSections = document.querySelector(".main-content");
 
+//Exportar cdn <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js" referrerpolicy="no-referrer"></script>
+var typed = new Typed(".typing", {
+  strings: ["Web", "FrontEnd", "BackEnd", "FullStack"],
+  typeSpeed: 110,
+  BackSpeed: 60,
+  loop: true,
+});
+
 function PageTransitions() {
   //Button click active class
   for (let i = 0; i < sectBnt.length; i++) {

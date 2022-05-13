@@ -18,7 +18,7 @@
 
 <body class="main-content">
   <header class="section sec1 translateY0 header active" id="home">
-    <div class="header-content">
+    <div class="header-content sm:gtc-repeat-1fr">
       <div class="left-header">
         <div class="h-shape"></div>
         <div class="image">
@@ -27,7 +27,8 @@
       </div>
       <div class="right-header">
         <h1 class="name">
-          Hola, Soy <span>Pablo Correa.</span> Un Desarrollador FullStack
+          Hola, Soy <span class="name-children">Pablo Correa.</span> Un Desarrollador <span
+            class="typing name-children"></span>
         </h1>
         <p>
           Ingeniero informático que se esfuerza por garantizar la satisfacción
@@ -51,7 +52,7 @@
       <div class="main-title">
         <h2>Sobre <span>mí</span> <span class="bg-text">mis stats</span></h2>
       </div>
-      <div class="about-container">
+      <div class="about-container sm:gtc-repeat-1fr">
         <div class="left-about">
           <h4>Información Sobre mí</h4>
           <p>
@@ -73,7 +74,7 @@
             </a>
           </div>
         </div>
-        <div class="right-about">
+        <div class="right-about sm:gtc-repeat-1fr">
           <div class="about-item">
             <div class="abt-text">
               <p class="large-text">560+</p>
@@ -114,7 +115,7 @@
       </div>
       <div class="about-stats">
         <h4 class="stat-title">Mis Habilidades</h4>
-        <div class="progress-bars">
+        <div class="progress-bars sm:gtc-repeat-1fr">
           <!-- Habilidades -->
           <div class="progress-bar">
             <p class="prog-title">html</p>
@@ -174,7 +175,7 @@
         </div>
       </div>
       <h4 class="stat-title">Mí línea de Tiempo</h4>
-      <div class="timeline">
+      <div class="timeline sm:gtc-repeat-1fr">
         <!-- Items timeLine -->
         <div class="timeline-item">
           <div class="tl-icon">
@@ -263,7 +264,7 @@
         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quam, quos.
       </p>
       <!-- PORTAFOLIOS -->
-      <div class="portfolios">
+      <div class="portfolios sm:gtc-repeat-1fr">
         <!-- Portafolio items -->
         <div class="portfolio-item">
           <div class="image">
@@ -395,7 +396,7 @@
           </h2>
         </div>
         <!-- BLOGS -->
-        <div class="blogs">
+        <div class="blogs sm:gtc-repeat-1fr">
           <!-- BLOG ITEM -->
           <div class="blog">
             <img src="img/LandingPageNetflix.jpeg" alt="" />
@@ -524,22 +525,19 @@
 
           <!-- CONTENEDOR DERECHO -->
           <div class="right-contact">
-            <form action="" class="contact-form">
+            <form action="https://formsubmit.co/pablocorrea523@gmail.com" method="POST" class="contact-form">
               <div class="input-control i-c-2">
                 <input type="text" required placeholder="Tu Nombre" />
-                <input type="email" required placeholder="Tu Email" />
+                <input type="email" name="email" required placeholder="Tu Email" />
               </div>
               <div class="input-control">
-                <input type="text" required placeholder="Ingresar Asunto" />
+                <input type="text" name="_subject" required placeholder="Ingresar Asunto" />
               </div>
               <div class="input-control">
-                <textarea name="" id="" cols="15" rows="8" placeholder="Mensaje aquí..."></textarea>
+                <textarea type="text" name="message" cols="15" rows="8" placeholder="Mensaje aquí..."></textarea>
               </div>
               <div class="submit-btn">
-                <a href="cv/CV-PabloCorrea.pdf" download="CV-PabloCorrea" class="main-btn">
-                  <span class="btn-text">Descargar CV</span>
-                  <span class="btn-icon"><i class="fas fa-download"></i></span>
-                </a>
+                <button type="submit"> Enviar</button>
               </div>
             </form>
           </div>
@@ -570,6 +568,8 @@
   <div class="theme-btn">
     <i class="fas fa-adjust"></i>
   </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"
+    referrerpolicy="no-referrer"></script>
   <script src="App.js"></script>
 </body>
 
