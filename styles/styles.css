@@ -312,7 +312,7 @@ section {
 
 .about-container .left-about p {
   line-height: 2rem;
-  padding: 1rem;
+  padding: 1rem 1rem 1rem 0;
   color: var(--color-grey1);
 }
 
@@ -462,7 +462,7 @@ section {
   font-size: 1.2rem;
 }
 
-.timeline .timeline-item p {
+.timeline .timeline-item li {
   color: var(--color-grey2);
 }
 
@@ -471,6 +471,10 @@ section {
 .port-text {
   padding: 2rem 0;
   text-align: center;
+}
+
+.port-text .celular {
+  display: none;
 }
 
 .portfolios {
@@ -986,23 +990,13 @@ section {
   .header-content .right-header {
     padding-right: 9rem;
   }
-}
 
-@media screen and (max-width: 660px) {
-  .blogs {
-    grid-template-columns: repeat(1, 1fr);
-  }
-
-  .portfolios {
+  .about-container {
     grid-template-columns: repeat(1, 1fr);
   }
 }
 
 @media screen and (max-width: 1070px) {
-  .about-container {
-    grid-template-columns: repeat(1, 1fr);
-  }
-
   .about-container .right-about {
     padding-top: 2.5rem;
   }
@@ -1017,6 +1011,14 @@ section {
 
   .main-title h2 .bg-text {
     font-size: 4.5rem;
+  }
+
+  .portfolios {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .blogs {
+    grid-template-columns: repeat(1, 1fr);
   }
 }
 
@@ -1084,5 +1086,12 @@ section {
 
   .main-title h2 .bg-text {
     font-size: 4rem;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .port-text .celular {
+    font-style: italic;
+    display: block;
   }
 }
